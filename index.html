@@ -873,7 +873,7 @@
         const date = document.getElementById('rDate').innerText;
         let items = currentBill.map(i => `• ${i.name} x${i.qty} = ₹${i.total.toFixed(2)}`).join('\n');
         const msg = encodeURIComponent(
-            `*Shilpa Trends* 🌸\n*Invoice: ${inv}*\nDate: ${date}\nClient: ${name}\n\n${items}\n\n*Total: ₹${net}*\n\nThank you for visiting! 💄`
+            `*Shilpa Beauty Centre* 🌸\n*Invoice: ${inv}*\nDate: ${date}\nClient: ${name}\n\n${items}\n\n*Total: ₹${net}*\n\nThank you for visiting! 💄`
         );
         const url = `https://wa.me/${phone.replace(/\D/g,'')}?text=${msg}`;
         window.open(url, '_blank');
